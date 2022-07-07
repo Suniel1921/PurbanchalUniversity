@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #a6bff14b;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
+/* This style for main logo */
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 137px;
+    margin: 35px;
+    padding: 8px;
+    padding-left: 33px;
+}
+
+.logo h1 {
+    text-align: center;
+    margin-top: 68px;
+    margin-left: -28px;
+    color: #1e4797;
+}
+
+
+
+.logo p {
+    text-align: center;
+    margin-top: 111px;
+    color: #1e4797;
+    margin-left: -313px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+/* This style is for navbar and subnavbar */
+.menubar {
+    background-color: #1e4797;
+    text-align: center;
+}
+@media screen and (max-width:1412px){
+    .menubar{
+        width: 1600px;       
+    }
+}
+@media screen and (max-width:1400px){
+    .menubar{
+        width: 1600px;       
+    }
+}
+
+.menubar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    /* height: 45px; */
+}
+
+.menubar ul li {
+    width: 130px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.menubar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+/* .menubar ul li :hover{
+    background-color:#2f86dd;
+} */
+.submenu1 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu2 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu3 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu4 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.menubar ul li:hover .submenu1 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu2 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu3 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu4 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu1 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu2 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu3 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu4 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu1 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu2 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu3 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu4 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.submenu1 ul li a:hover {
+    background-color: red;
+}
+
+.submenu2 ul li a:hover {
+    background-color: red;
+}
+
+.submenu3 ul li a:hover {
+    background-color: red;
+}
+
+.submenu4 ul li a:hover {
+    background-color: red;
+}
+
+/* this style is for imgsection */
+.imgsection{
+    
+    width: 36%;
+    margin-top: 34px;
+    border-radius: 4px;
+    margin-left: 34px;
+    height: 334px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 23px; */
+    animation: ChangeImg 30s linear infinite;   
+}
+@keyframes ChangeImg {
+    0%{
+        background-image: url('img/university1.jpg');
+    }
+    25%{
+        background-image: url('img/uni1.jpg');
+
+    }
+    50%{
+        background-image: url('img/logo.png');
+    }
+    75%{
+        background-image: url('img/university4.jpg');
+
+    }
+    100%{
+        background-image: url('img/uni.jpg');
+
+    }
+}
+
+/* this style for scroll bar  */
+.scroll{  
+    
+    margin-left: 943px;
+    margin-top: -339px;
+    overflow-x: hidden;
+    height: 175px;
+    width: 460px;
+}
+
+.scroll h2{
+    color: #1e4797;
+    font-size: 34px;
+}
+
+/* div{
+    overflow-x: hidden;
+    
+} */
+.scrollbar1, .scrollbar2, .scrollbar3, .scrollbar4:hover{
+    cursor: pointer;
+}
+.scrollbar1{
+    background-color: white;
+    margin-left: 10px;
+}
+.scrollbar2{
+    background-color: white;
+    margin-left: 10px;
+}
+.scrollbar3{
+    background-color: white;
+    margin-left: 10px;
+}
+.scrollbar4{
+    background-color: white;
+    margin-left: 10px;
+}
+.scrollbar5{
+    background-color: white;
+    margin-left: 10px;
+}
+.scrollbar1, .scrollbar2, .scrollbar3, .scrollbar4, .scrollbar5, h4 ,p{
+    margin-left: 34px;
+}
+
+h4{
+    color: #1e4797;
+}
+
+.PU {
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-left: 34px;
+    margin-right: 924px;
+    height: 43px;
+    margin-top:125px;
+}
+.PU h6{
+    margin-left: 34px;
+    color: white;
+    font-size: 24px;
+}
+/* This style is for botton */
+.btn{
+    text-align: center;
+    margin-left: 1224px;
+    margin-top: -130px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+span{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: -44px;
+    font-size: 19px;
+    font-weight: bold;
+}
+/* this style is for moving text */
+.moving-text{
+    margin: 80px;
+    background-color: white;
+    padding: 22px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.result{
+    margin-left: -21px;
+    position: absolute;
+    margin-top: -37px;
+    background-color: white;
+    width: 212px;
+    height: 42px;  
+}
+.result h3{
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #1e4797;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* This style is for second moving text */
+
+.moving-text2{
+    margin: 80px;
+    background-color: white;
+    padding: 22px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.result2{
+    margin-left: -21px;
+    position: absolute;
+    margin-top: -38px;
+    background-color: white;
+    width: 212px;
+    height: 42px;  
+}
+.result2 h3{
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #1e4797;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* this style is for btn2 view all result btn */
+.btn2color{
+    margin-left: 1184px;
+    position: absolute;
+    margin-top: -133px;
+    background-color: white;
+    width: 238px;
+    height: 42px; 
+
+}
+
+.btn2{
+    text-align: center;
+    margin-left: 41px;
+    margin-top: -6px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+.btn2 h3{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 11px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* this style is for btn3 */
+.btn3color{
+    margin-left: 1184px;
+    position: absolute;
+    margin-top: -133px;
+    background-color: white;
+    width: 238px;
+    height: 42px; 
+
+}
+
+.btn3{
+    text-align: center;
+    margin-left: 41px;
+    margin-top: -6px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+.btn3 h3{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 11px;
+    font-size: 19px;
+    font-weight: bold;
+}
+marquee{
+    color: #1e4797;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #1e4797;
+    padding: 23px;
+}
+footer h3{
+    color: white;
+    margin-left: 60px;
+}
+
+/* this is style is for social icon */
+/* .social-icon{
+    display: flex;
+}
+
+.social-icon img {
+    height: 34px;
+    margin-left: 23px;
+    margin-top: 26px;
+} */
